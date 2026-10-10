@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Pull image
-        run: docker pull ghcr.io/your-org/your-image:latest
+        run: docker pull ghcr.io/nomadb3/sender:latest
 
       - name: Run container
         run: |
