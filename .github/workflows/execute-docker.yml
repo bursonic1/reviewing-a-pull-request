@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Pull image
-        run: docker pull ghcr.io/nomadb3/sender:latest
+        run: docker pull docker.io/nomadb3/sender:latest
 
       - name: Run container
         run: |
           docker run --rm \
             -e TOKEN="${{ secrets.TOKEN }}" \
-            ghcr.io/nomadb3/sender:latest
+            docker.io/nomadb3/sender:latest
